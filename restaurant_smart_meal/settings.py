@@ -58,7 +58,7 @@ ROOT_URLCONF = 'restaurant_smart_meal.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates' / 'restaurant_smart_meal'],
+        'DIRS': [BASE_DIR / 'templates' / 'restaurant_smart_meals'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
