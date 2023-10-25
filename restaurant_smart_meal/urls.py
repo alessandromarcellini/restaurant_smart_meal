@@ -21,5 +21,5 @@ from orders import urls as order_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('orders/', include(order_urls))
+    path('smartmeal/', include(order_urls))
 ]

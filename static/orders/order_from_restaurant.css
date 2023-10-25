@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+
+.top {
+    background-color: yellow;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image {
+    background-color: blue;
+    height: 70vh;
+}
+
+.bottom {
+    background-color: grey;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom .logo {
+    background-color: black;
+    height: 10vh;
+    width: 10vh;
+}

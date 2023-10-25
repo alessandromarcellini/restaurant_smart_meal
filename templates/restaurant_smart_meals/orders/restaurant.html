@@ -6,5 +6,15 @@
 </head>
 <body>
     <h1>{{ restaurant.city }}</h1>
+    <p> Address: Street {{ restaurant.street }}, {{ restaurant.number }}</p>
+    <p> Cover charge: {{ restaurant.cover_charge }}$</p>
+    {% for plate in restaurant.plates.all %}
+        <p>{{ plate }}</p>
+    {% endfor %}
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <a href="{% url 'order' restaurant.restaurant_id %}">Order Here</a>
 </body>
 </html>

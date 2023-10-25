@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order| Restaurant Smart Meal</title>
+    <link rel="stylesheet" href="{% static 'orders/order_from_restaurant.css' %}">
+</head>
+<body>
+    <div class="top">
+        <h2>Fast & Easy</h2>
+    </div>
+    <div class="image"></div>
+    <div class="bottom">
+        <div class="logo"></div> <!-- Temporary, there will be a logo-->
+        <h4>Touch to Order</h4>
+    </div>
+
+    <!-- The ordering part will be hidden until the client touches the screen -->
+<!--    {% for plate in restaurant.plates.all %}
+        <div class="block">
+            <p>{{ plate.name }}</p>
+            <p>{{ plate.description }}</p>
+            <input type="checkbox" id="" name="{{ plate.name }}" value="">
+        </div>
+    {% endfor %}
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <a href="">Submit</a>-->
+</body>
+</html>

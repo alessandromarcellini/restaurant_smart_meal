@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home| Restaurant Smart Meal</title>
+</head>
+<body>
+    <h2>Check out our list of restaurants!!!</h2>
+    <p>Note: this is made to show this web app is made to support multiple touch screens all connected to the same system.\nSupporting multiple restaurants</p>
+    <ul>
+        {% for restaurant in restaurants %}
+        <li>Mc Donald's of: <a href="{% url 'order' restaurant.restaurant_id%}">{{restaurant.city}}</a></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
